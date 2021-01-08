@@ -33,7 +33,7 @@ int main(void)
     {
         temp=adc_result0/2.0;   //Calculating the temperature 
       
-        if (temp>15)  //Checks for the numerical value to be lower than 15
+        if (temp<15)  //Checks for the numerical value to be lower than 15
        {                     
            PORTB=(1<<PINB5);
             _delay_ms(3000);
